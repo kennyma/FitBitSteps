@@ -5,8 +5,8 @@ Create an iOS application that displays steps information from Fitbit
 Build your UI according to this mock: https://drive.google.com/file/d/0B64OB33WYv7JMG1Mb2VBdUJWanc/view
 
 The app should:
-* Fetch today's data from Fitbit on app start
-* Auto fetch today's data from Fitbit every 1 minute
+* Fetch today's data from Fitbit
+* Auto fetch today's data from Fitbit on a regular basis
 * Display old data while fetching for new data
 * Persist data to database
 * Display list of historical step data
