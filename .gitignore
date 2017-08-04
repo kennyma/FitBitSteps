@@ -1,0 +1,8 @@
+xcuserdata/
+**/.DS_Store
+versions.h
+Mango.xccheckout
+Local.plist
+.virtualenv
+Automation/pip-selfcheck.json
+
