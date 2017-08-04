@@ -13,6 +13,7 @@ The app should:
 * Pre-fetch data as user scroll through the list of historical step data
 
 ## Guidelines
+* This starter project contains code for user authentication against Fitbit API so you don't have to implement authentication.
 * All of the UI must be written in code. Do not use Interface Builder
 * Optimize your app for users with years of data from Fitbit
 * Write production quality code with an emphasis on maintainability
