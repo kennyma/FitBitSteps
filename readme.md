@@ -14,7 +14,7 @@ The app should:
 
 ## Guidelines
 * All of the UI must be written in code. Do not use Interface Builder
-* Optimize your app for users from years of data from Fitbit
+* Optimize your app for users with years of data from Fitbit
 * Write production quality code with an emphasis on maintainability
 * Refactor existing code when necessary
 * Write tests  
