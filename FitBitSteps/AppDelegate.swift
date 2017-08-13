@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
 
+
 	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
 		if url.host == "oauth-callback" {
 			guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first?.value else {
@@ -63,6 +64,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 						return
 					}
 					accessToken = responseDict["access_token"] as! String
+                    
+                    
+                        let stepsRequestString  = "https://api.fitbit.com/1/user/\(clientID)/activities/steps/date/today/1d.json"
+                        let stepsRequestURL = URL.init(string: stepsRequestString)
+                        var stepsRequest = URLRequest.init(url: stepsRequestURL!)
+                        stepsRequest.addValue(accessToken, forHTTPHeaderField: "Authorization")
+                        
+                        let task = URLSession.shared.dataTask(with: stepsRequestURL!) { (data, response, error) in
+                            if let responseDict = try? JSONSerialization.jsonObject(with: data!, options: []) as! Dictionary<String, Any> {
+                                stepsData = responseDict
+                                
+                            } else {
+                                print("JSON Serialization error")
+                            }
+                        }
+                        
+                        task.resume()
+
+                    
+                    
 				} else {
 					print("JSON Serialization error")
 				}

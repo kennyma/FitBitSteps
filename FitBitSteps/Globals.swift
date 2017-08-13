@@ -14,3 +14,5 @@ let tokenURL: String = "https://api.fitbit.com/oauth2/token"
 let clientSecret: String = "45d700afa2244b04fc30f26b205eeb8b"
 let clientID: String = "228NRR"
 var accessToken: String = ""
+
+var stepsData: Dictionary<String, Any>? = nil

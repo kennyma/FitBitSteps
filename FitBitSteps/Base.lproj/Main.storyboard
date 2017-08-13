@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,6 +45,7 @@
                                 </state>
                                 <connections>
                                     <action selector="connectButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QgQ-7X-rlK"/>
+                                    <segue destination="b83-is-ObH" kind="show" id="OmD-ga-xwh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,6 +65,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Steps View Controller-->
+        <scene sceneID="piO-jB-oh8">
+            <objects>
+                <viewController id="b83-is-ObH" customClass="StepsViewController" customModule="FitBit_Steps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y4d-Na-zsQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PAC-sf-eVk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NfX-ku-HUw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x67-7H-rad" userLabel="StepsTodayView">
+                                <rect key="frame" x="16" y="0.0" width="343" height="233"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVZ-ZC-5UN" userLabel="StepsTodayLabel">
+                                        <rect key="frame" x="109" y="106" width="135" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Updated X minutes ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ank-TT-o0v" userLabel="UpdatedLabel">
+                                        <rect key="frame" x="72" y="153" width="198" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xej-nd-0pU" userLabel="StepNumber">
+                                        <rect key="frame" x="126" y="19" width="100" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.17593609290046919" alpha="0.09504291373239436" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gj-bC-aFn" userLabel="GraphView">
+                                <rect key="frame" x="16" y="241" width="343" height="217"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.96023426616018615" alpha="0.10172755281690141" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2gj-bC-aFn" firstAttribute="trailing" secondItem="x67-7H-rad" secondAttribute="trailing" id="3DE-mY-JWh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x67-7H-rad" secondAttribute="trailing" id="RBH-7g-GNX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2gj-bC-aFn" secondAttribute="trailing" id="aER-zv-E6k"/>
+                            <constraint firstItem="x67-7H-rad" firstAttribute="leading" secondItem="NfX-ku-HUw" secondAttribute="leadingMargin" id="rl5-vJ-aDS"/>
+                            <constraint firstItem="2gj-bC-aFn" firstAttribute="leading" secondItem="NfX-ku-HUw" secondAttribute="leadingMargin" id="xag-WE-09M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="graphView" destination="2gj-bC-aFn" id="wCs-0K-CjK"/>
+                        <outlet property="stepNumberLabel" destination="xej-nd-0pU" id="Xu7-vU-gDZ"/>
+                        <outlet property="stepsTodayView" destination="x67-7H-rad" id="5cv-WL-AQC"/>
+                        <outlet property="updatedLabel" destination="ank-TT-o0v" id="1rH-61-xSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6b-C2-m1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="123.68815592203899"/>
         </scene>
     </scenes>
 </document>
