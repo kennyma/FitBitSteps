@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		657C24B81F5F2BBA008EC995 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 657C24B71F5F2BBA008EC995 /* Globals.m */; };
+		65F6E50F1F5F192C007E8933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F6E50E1F5F192C007E8933 /* main.m */; };
+		65F6E5121F5F192C007E8933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F6E5111F5F192C007E8933 /* AppDelegate.m */; };
+		65F6E5151F5F192C007E8933 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F6E5141F5F192C007E8933 /* ViewController.m */; };
+		65F6E5181F5F192C007E8933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F6E5161F5F192C007E8933 /* Main.storyboard */; };
+		65F6E51A1F5F192C007E8933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F6E5191F5F192C007E8933 /* Assets.xcassets */; };
+		65F6E51D1F5F192C007E8933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F6E51B1F5F192C007E8933 /* LaunchScreen.storyboard */; };
+		65F6E5281F5F192C007E8933 /* FitBitStepsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F6E5271F5F192C007E8933 /* FitBitStepsTests.m */; };
+		65F6E5331F5F192C007E8933 /* FitBitStepsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F6E5321F5F192C007E8933 /* FitBitStepsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65F6E5241F5F192C007E8933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65F6E5021F5F192B007E8933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65F6E5091F5F192C007E8933;
+			remoteInfo = FitBitSteps;
+		};
+		65F6E52F1F5F192C007E8933 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65F6E5021F5F192B007E8933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65F6E5091F5F192C007E8933;
+			remoteInfo = FitBitSteps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		657C24B61F5F2BBA008EC995 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		657C24B71F5F2BBA008EC995 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		65F6E50A1F5F192C007E8933 /* FitBitSteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBitSteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F6E50E1F5F192C007E8933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65F6E5101F5F192C007E8933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65F6E5111F5F192C007E8933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65F6E5131F5F192C007E8933 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		65F6E5141F5F192C007E8933 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65F6E5171F5F192C007E8933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65F6E5191F5F192C007E8933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F6E51C1F5F192C007E8933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65F6E51E1F5F192C007E8933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F6E5231F5F192C007E8933 /* FitBitStepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitStepsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F6E5271F5F192C007E8933 /* FitBitStepsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitBitStepsTests.m; sourceTree = "<group>"; };
+		65F6E5291F5F192C007E8933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F6E52E1F5F192C007E8933 /* FitBitStepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitStepsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F6E5321F5F192C007E8933 /* FitBitStepsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitBitStepsUITests.m; sourceTree = "<group>"; };
+		65F6E5341F5F192C007E8933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65F6E5071F5F192C007E8933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F6E5201F5F192C007E8933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F6E52B1F5F192C007E8933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65F6E5011F5F192B007E8933 = {
+			isa = PBXGroup;
+			children = (
+				65F6E50C1F5F192C007E8933 /* FitBitSteps */,
+				65F6E5261F5F192C007E8933 /* FitBitStepsTests */,
+				65F6E5311F5F192C007E8933 /* FitBitStepsUITests */,
+				65F6E50B1F5F192C007E8933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65F6E50B1F5F192C007E8933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65F6E50A1F5F192C007E8933 /* FitBitSteps.app */,
+				65F6E5231F5F192C007E8933 /* FitBitStepsTests.xctest */,
+				65F6E52E1F5F192C007E8933 /* FitBitStepsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65F6E50C1F5F192C007E8933 /* FitBitSteps */ = {
+			isa = PBXGroup;
+			children = (
+				65F6E5101F5F192C007E8933 /* AppDelegate.h */,
+				65F6E5111F5F192C007E8933 /* AppDelegate.m */,
+				657C24B61F5F2BBA008EC995 /* Globals.h */,
+				657C24B71F5F2BBA008EC995 /* Globals.m */,
+				65F6E5131F5F192C007E8933 /* ViewController.h */,
+				65F6E5141F5F192C007E8933 /* ViewController.m */,
+				65F6E5161F5F192C007E8933 /* Main.storyboard */,
+				65F6E5191F5F192C007E8933 /* Assets.xcassets */,
+				65F6E51B1F5F192C007E8933 /* LaunchScreen.storyboard */,
+				65F6E51E1F5F192C007E8933 /* Info.plist */,
+				65F6E50D1F5F192C007E8933 /* Supporting Files */,
+			);
+			path = FitBitSteps;
+			sourceTree = "<group>";
+		};
+		65F6E50D1F5F192C007E8933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65F6E50E1F5F192C007E8933 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65F6E5261F5F192C007E8933 /* FitBitStepsTests */ = {
+			isa = PBXGroup;
+			children = (
+				65F6E5271F5F192C007E8933 /* FitBitStepsTests.m */,
+				65F6E5291F5F192C007E8933 /* Info.plist */,
+			);
+			path = FitBitStepsTests;
+			sourceTree = "<group>";
+		};
+		65F6E5311F5F192C007E8933 /* FitBitStepsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65F6E5321F5F192C007E8933 /* FitBitStepsUITests.m */,
+				65F6E5341F5F192C007E8933 /* Info.plist */,
+			);
+			path = FitBitStepsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65F6E5091F5F192C007E8933 /* FitBitSteps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F6E5371F5F192C007E8933 /* Build configuration list for PBXNativeTarget "FitBitSteps" */;
+			buildPhases = (
+				65F6E5061F5F192C007E8933 /* Sources */,
+				65F6E5071F5F192C007E8933 /* Frameworks */,
+				65F6E5081F5F192C007E8933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBitSteps;
+			productName = FitBitSteps;
+			productReference = 65F6E50A1F5F192C007E8933 /* FitBitSteps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65F6E5221F5F192C007E8933 /* FitBitStepsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F6E53A1F5F192C007E8933 /* Build configuration list for PBXNativeTarget "FitBitStepsTests" */;
+			buildPhases = (
+				65F6E51F1F5F192C007E8933 /* Sources */,
+				65F6E5201F5F192C007E8933 /* Frameworks */,
+				65F6E5211F5F192C007E8933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F6E5251F5F192C007E8933 /* PBXTargetDependency */,
+			);
+			name = FitBitStepsTests;
+			productName = FitBitStepsTests;
+			productReference = 65F6E5231F5F192C007E8933 /* FitBitStepsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65F6E52D1F5F192C007E8933 /* FitBitStepsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F6E53D1F5F192C007E8933 /* Build configuration list for PBXNativeTarget "FitBitStepsUITests" */;
+			buildPhases = (
+				65F6E52A1F5F192C007E8933 /* Sources */,
+				65F6E52B1F5F192C007E8933 /* Frameworks */,
+				65F6E52C1F5F192C007E8933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F6E5301F5F192C007E8933 /* PBXTargetDependency */,
+			);
+			name = FitBitStepsUITests;
+			productName = FitBitStepsUITests;
+			productReference = 65F6E52E1F5F192C007E8933 /* FitBitStepsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65F6E5021F5F192B007E8933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Mango;
+				TargetAttributes = {
+					65F6E5091F5F192C007E8933 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DDLHCN6PR8;
+						ProvisioningStyle = Automatic;
+					};
+					65F6E5221F5F192C007E8933 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DDLHCN6PR8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65F6E5091F5F192C007E8933;
+					};
+					65F6E52D1F5F192C007E8933 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DDLHCN6PR8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 65F6E5091F5F192C007E8933;
+					};
+				};
+			};
+			buildConfigurationList = 65F6E5051F5F192B007E8933 /* Build configuration list for PBXProject "FitBitSteps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65F6E5011F5F192B007E8933;
+			productRefGroup = 65F6E50B1F5F192C007E8933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65F6E5091F5F192C007E8933 /* FitBitSteps */,
+				65F6E5221F5F192C007E8933 /* FitBitStepsTests */,
+				65F6E52D1F5F192C007E8933 /* FitBitStepsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65F6E5081F5F192C007E8933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F6E51D1F5F192C007E8933 /* LaunchScreen.storyboard in Resources */,
+				65F6E51A1F5F192C007E8933 /* Assets.xcassets in Resources */,
+				65F6E5181F5F192C007E8933 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F6E5211F5F192C007E8933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F6E52C1F5F192C007E8933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F6E5061F5F192C007E8933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				657C24B81F5F2BBA008EC995 /* Globals.m in Sources */,
+				65F6E5151F5F192C007E8933 /* ViewController.m in Sources */,
+				65F6E5121F5F192C007E8933 /* AppDelegate.m in Sources */,
+				65F6E50F1F5F192C007E8933 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F6E51F1F5F192C007E8933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F6E5281F5F192C007E8933 /* FitBitStepsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F6E52A1F5F192C007E8933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F6E5331F5F192C007E8933 /* FitBitStepsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65F6E5251F5F192C007E8933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65F6E5091F5F192C007E8933 /* FitBitSteps */;
+			targetProxy = 65F6E5241F5F192C007E8933 /* PBXContainerItemProxy */;
+		};
+		65F6E5301F5F192C007E8933 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65F6E5091F5F192C007E8933 /* FitBitSteps */;
+			targetProxy = 65F6E52F1F5F192C007E8933 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65F6E5161F5F192C007E8933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F6E5171F5F192C007E8933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65F6E51B1F5F192C007E8933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F6E51C1F5F192C007E8933 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65F6E5351F5F192C007E8933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65F6E5361F5F192C007E8933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65F6E5381F5F192C007E8933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				INFOPLIST_FILE = FitBitSteps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitSteps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65F6E5391F5F192C007E8933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				INFOPLIST_FILE = FitBitSteps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitSteps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65F6E53B1F5F192C007E8933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				INFOPLIST_FILE = FitBitStepsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitStepsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBitSteps.app/FitBitSteps";
+			};
+			name = Debug;
+		};
+		65F6E53C1F5F192C007E8933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				INFOPLIST_FILE = FitBitStepsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitStepsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBitSteps.app/FitBitSteps";
+			};
+			name = Release;
+		};
+		65F6E53E1F5F192C007E8933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				INFOPLIST_FILE = FitBitStepsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitStepsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitBitSteps;
+			};
+			name = Debug;
+		};
+		65F6E53F1F5F192C007E8933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				INFOPLIST_FILE = FitBitStepsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitStepsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FitBitSteps;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F6E5051F5F192B007E8933 /* Build configuration list for PBXProject "FitBitSteps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F6E5351F5F192C007E8933 /* Debug */,
+				65F6E5361F5F192C007E8933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F6E5371F5F192C007E8933 /* Build configuration list for PBXNativeTarget "FitBitSteps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F6E5381F5F192C007E8933 /* Debug */,
+				65F6E5391F5F192C007E8933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F6E53A1F5F192C007E8933 /* Build configuration list for PBXNativeTarget "FitBitStepsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F6E53B1F5F192C007E8933 /* Debug */,
+				65F6E53C1F5F192C007E8933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F6E53D1F5F192C007E8933 /* Build configuration list for PBXNativeTarget "FitBitStepsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F6E53E1F5F192C007E8933 /* Debug */,
+				65F6E53F1F5F192C007E8933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65F6E5021F5F192B007E8933 /* Project object */;
+}
