@@ -12,20 +12,14 @@
 		652866831F1E82F80069C294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652866811F1E82F80069C294 /* Main.storyboard */; };
 		652866851F1E82F80069C294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 652866841F1E82F80069C294 /* Assets.xcassets */; };
 		652866881F1E82F80069C294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652866861F1E82F80069C294 /* LaunchScreen.storyboard */; };
-		652866931F1E82F80069C294 /* FitBit_StepsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652866921F1E82F80069C294 /* FitBit_StepsTests.swift */; };
-		6528669E1F1E82F80069C294 /* FitBit_StepsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6528669D1F1E82F80069C294 /* FitBit_StepsUITests.swift */; };
 		652866AC1F1E8B130069C294 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652866AB1F1E8B130069C294 /* Globals.swift */; };
+		A101BA6E1F629081003D2EF6 /* URLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101BA6D1F629081003D2EF6 /* URLExtensions.swift */; };
+		A101BA8F1F62A641003D2EF6 /* FitBitStepsUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101BA8E1F62A641003D2EF6 /* FitBitStepsUnitTests.swift */; };
+		A101BA971F62A654003D2EF6 /* URLExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101BA961F62A654003D2EF6 /* URLExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6528668F1F1E82F80069C294 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 652866721F1E82F70069C294 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 652866791F1E82F70069C294;
-			remoteInfo = "FitBit Steps";
-		};
-		6528669A1F1E82F80069C294 /* PBXContainerItemProxy */ = {
+		A101BA911F62A641003D2EF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 652866721F1E82F70069C294 /* Project object */;
 			proxyType = 1;
@@ -42,13 +36,12 @@
 		652866841F1E82F80069C294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		652866871F1E82F80069C294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		652866891F1E82F80069C294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6528668E1F1E82F80069C294 /* FitBit StepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitBit StepsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		652866921F1E82F80069C294 /* FitBit_StepsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBit_StepsTests.swift; sourceTree = "<group>"; };
-		652866941F1E82F80069C294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		652866991F1E82F80069C294 /* FitBit StepsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FitBit StepsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6528669D1F1E82F80069C294 /* FitBit_StepsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBit_StepsUITests.swift; sourceTree = "<group>"; };
-		6528669F1F1E82F80069C294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		652866AB1F1E8B130069C294 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		A101BA6D1F629081003D2EF6 /* URLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensions.swift; sourceTree = "<group>"; };
+		A101BA8C1F62A641003D2EF6 /* FitBitStepsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBitStepsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A101BA8E1F62A641003D2EF6 /* FitBitStepsUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBitStepsUnitTests.swift; sourceTree = "<group>"; };
+		A101BA901F62A641003D2EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A101BA961F62A654003D2EF6 /* URLExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +52,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6528668B1F1E82F80069C294 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		652866961F1E82F80069C294 /* Frameworks */ = {
+		A101BA891F62A641003D2EF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				6528667C1F1E82F80069C294 /* FitBitSteps */,
-				652866911F1E82F80069C294 /* FitBitStepsTests */,
-				6528669C1F1E82F80069C294 /* FitBitStepsUITests */,
+				A101BA8D1F62A641003D2EF6 /* FitBitStepsUnitTests */,
 				6528667B1F1E82F80069C294 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				6528667A1F1E82F80069C294 /* FitBit Steps.app */,
-				6528668E1F1E82F80069C294 /* FitBit StepsTests.xctest */,
-				652866991F1E82F80069C294 /* FitBit StepsUITests.xctest */,
+				A101BA8C1F62A641003D2EF6 /* FitBitStepsUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +83,7 @@
 		6528667C1F1E82F80069C294 /* FitBitSteps */ = {
 			isa = PBXGroup;
 			children = (
+				A101BA6C1F628FE2003D2EF6 /* Extensions */,
 				6528667D1F1E82F80069C294 /* AppDelegate.swift */,
 				652866AB1F1E8B130069C294 /* Globals.swift */,
 				6528667F1F1E82F80069C294 /* ViewController.swift */,
@@ -110,22 +95,22 @@
 			path = FitBitSteps;
 			sourceTree = "<group>";
 		};
-		652866911F1E82F80069C294 /* FitBitStepsTests */ = {
+		A101BA6C1F628FE2003D2EF6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				652866921F1E82F80069C294 /* FitBit_StepsTests.swift */,
-				652866941F1E82F80069C294 /* Info.plist */,
+				A101BA6D1F629081003D2EF6 /* URLExtensions.swift */,
 			);
-			path = FitBitStepsTests;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		6528669C1F1E82F80069C294 /* FitBitStepsUITests */ = {
+		A101BA8D1F62A641003D2EF6 /* FitBitStepsUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				6528669D1F1E82F80069C294 /* FitBit_StepsUITests.swift */,
-				6528669F1F1E82F80069C294 /* Info.plist */,
+				A101BA961F62A654003D2EF6 /* URLExtensionsTests.swift */,
+				A101BA8E1F62A641003D2EF6 /* FitBitStepsUnitTests.swift */,
+				A101BA901F62A641003D2EF6 /* Info.plist */,
 			);
-			path = FitBitStepsUITests;
+			path = FitBitStepsUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,41 +133,23 @@
 			productReference = 6528667A1F1E82F80069C294 /* FitBit Steps.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6528668D1F1E82F80069C294 /* FitBit StepsTests */ = {
+		A101BA8B1F62A641003D2EF6 /* FitBitStepsUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 652866A51F1E82F80069C294 /* Build configuration list for PBXNativeTarget "FitBit StepsTests" */;
+			buildConfigurationList = A101BA931F62A641003D2EF6 /* Build configuration list for PBXNativeTarget "FitBitStepsUnitTests" */;
 			buildPhases = (
-				6528668A1F1E82F80069C294 /* Sources */,
-				6528668B1F1E82F80069C294 /* Frameworks */,
-				6528668C1F1E82F80069C294 /* Resources */,
+				A101BA881F62A641003D2EF6 /* Sources */,
+				A101BA891F62A641003D2EF6 /* Frameworks */,
+				A101BA8A1F62A641003D2EF6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				652866901F1E82F80069C294 /* PBXTargetDependency */,
+				A101BA921F62A641003D2EF6 /* PBXTargetDependency */,
 			);
-			name = "FitBit StepsTests";
-			productName = "FitBit StepsTests";
-			productReference = 6528668E1F1E82F80069C294 /* FitBit StepsTests.xctest */;
+			name = FitBitStepsUnitTests;
+			productName = FitBitStepsUnitTests;
+			productReference = A101BA8C1F62A641003D2EF6 /* FitBitStepsUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		652866981F1E82F80069C294 /* FitBit StepsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 652866A81F1E82F80069C294 /* Build configuration list for PBXNativeTarget "FitBit StepsUITests" */;
-			buildPhases = (
-				652866951F1E82F80069C294 /* Sources */,
-				652866961F1E82F80069C294 /* Frameworks */,
-				652866971F1E82F80069C294 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6528669B1F1E82F80069C294 /* PBXTargetDependency */,
-			);
-			name = "FitBit StepsUITests";
-			productName = "FitBit StepsUITests";
-			productReference = 652866991F1E82F80069C294 /* FitBit StepsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,18 +163,10 @@
 				TargetAttributes = {
 					652866791F1E82F70069C294 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DDLHCN6PR8;
 						ProvisioningStyle = Automatic;
 					};
-					6528668D1F1E82F80069C294 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DDLHCN6PR8;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 652866791F1E82F70069C294;
-					};
-					652866981F1E82F80069C294 = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DDLHCN6PR8;
+					A101BA8B1F62A641003D2EF6 = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 652866791F1E82F70069C294;
 					};
@@ -227,8 +186,7 @@
 			projectRoot = "";
 			targets = (
 				652866791F1E82F70069C294 /* FitBit Steps */,
-				6528668D1F1E82F80069C294 /* FitBit StepsTests */,
-				652866981F1E82F80069C294 /* FitBit StepsUITests */,
+				A101BA8B1F62A641003D2EF6 /* FitBitStepsUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,14 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6528668C1F1E82F80069C294 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		652866971F1E82F80069C294 /* Resources */ = {
+		A101BA8A1F62A641003D2EF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,39 +217,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				652866801F1E82F80069C294 /* ViewController.swift in Sources */,
+				A101BA6E1F629081003D2EF6 /* URLExtensions.swift in Sources */,
 				6528667E1F1E82F80069C294 /* AppDelegate.swift in Sources */,
 				652866AC1F1E8B130069C294 /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6528668A1F1E82F80069C294 /* Sources */ = {
+		A101BA881F62A641003D2EF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652866931F1E82F80069C294 /* FitBit_StepsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		652866951F1E82F80069C294 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6528669E1F1E82F80069C294 /* FitBit_StepsUITests.swift in Sources */,
+				A101BA8F1F62A641003D2EF6 /* FitBitStepsUnitTests.swift in Sources */,
+				A101BA971F62A654003D2EF6 /* URLExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		652866901F1E82F80069C294 /* PBXTargetDependency */ = {
+		A101BA921F62A641003D2EF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 652866791F1E82F70069C294 /* FitBit Steps */;
-			targetProxy = 6528668F1F1E82F80069C294 /* PBXContainerItemProxy */;
-		};
-		6528669B1F1E82F80069C294 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 652866791F1E82F70069C294 /* FitBit Steps */;
-			targetProxy = 6528669A1F1E82F80069C294 /* PBXContainerItemProxy */;
+			targetProxy = A101BA911F62A641003D2EF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,7 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FitBitSteps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitSteps;
@@ -432,7 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DDLHCN6PR8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FitBitSteps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitSteps;
@@ -441,61 +381,29 @@
 			};
 			name = Release;
 		};
-		652866A61F1E82F80069C294 /* Debug */ = {
+		A101BA941F62A641003D2EF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = DDLHCN6PR8;
-				INFOPLIST_FILE = "FitBit StepsTests/Info.plist";
+				INFOPLIST_FILE = FitBitStepsUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.redux.FitBit-StepsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitStepsUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBit Steps.app/FitBit Steps";
 			};
 			name = Debug;
 		};
-		652866A71F1E82F80069C294 /* Release */ = {
+		A101BA951F62A641003D2EF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = DDLHCN6PR8;
-				INFOPLIST_FILE = "FitBit StepsTests/Info.plist";
+				INFOPLIST_FILE = FitBitStepsUnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.redux.FitBit-StepsTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.redux.FitBitStepsUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBit Steps.app/FitBit Steps";
-			};
-			name = Release;
-		};
-		652866A91F1E82F80069C294 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = DDLHCN6PR8;
-				INFOPLIST_FILE = "FitBit StepsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.redux.FitBit-StepsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "FitBit Steps";
-			};
-			name = Debug;
-		};
-		652866AA1F1E82F80069C294 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = DDLHCN6PR8;
-				INFOPLIST_FILE = "FitBit StepsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.redux.FitBit-StepsUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "FitBit Steps";
 			};
 			name = Release;
 		};
@@ -520,23 +428,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		652866A51F1E82F80069C294 /* Build configuration list for PBXNativeTarget "FitBit StepsTests" */ = {
+		A101BA931F62A641003D2EF6 /* Build configuration list for PBXNativeTarget "FitBitStepsUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				652866A61F1E82F80069C294 /* Debug */,
-				652866A71F1E82F80069C294 /* Release */,
+				A101BA941F62A641003D2EF6 /* Debug */,
+				A101BA951F62A641003D2EF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		652866A81F1E82F80069C294 /* Build configuration list for PBXNativeTarget "FitBit StepsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				652866A91F1E82F80069C294 /* Debug */,
-				652866AA1F1E82F80069C294 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
