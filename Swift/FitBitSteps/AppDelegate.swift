@@ -63,6 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 						return
 					}
 					accessToken = responseDict["access_token"] as! String
+					userID = responseDict["user_id"] as! String
 				} else {
 					print("JSON Serialization error")
 				}
