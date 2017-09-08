@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
 		if url.host == "oauth-callback" {
-			// Fitbit auth callback uses "#" instead of "?" in query string params so we need to replace it before we can properly parse the querystring params
+			// OAuth explicit grant callback uses "#" instead of "?" in query string params so we need to replace it before we can properly parse the params
 			let urlString = url.absoluteString.replacingOccurrences(of: "#", with: "?")
 			guard let url = URL(string: urlString) else {
 			    DispatchQueue.main.async {
@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 			fitbitAccessToken = url.queryStringValueOf(queryStringName: "access_token")!
 			fitbitUserId = url.queryStringValueOf(queryStringName: "user_id")!
+            fitbitTokenExpiresIn = Int(url.queryStringValueOf(queryStringName: "expires_in")!)!
 		}
 		return true
 	}

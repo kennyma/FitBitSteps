@@ -15,3 +15,4 @@ let clientSecret: String = "45d700afa2244b04fc30f26b205eeb8b"
 let clientID: String = "228NRR"
 var fitbitAccessToken: String = ""
 var fitbitUserId: String = ""
+var fitbitTokenExpiresIn: Int = 0
