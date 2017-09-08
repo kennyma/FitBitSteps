@@ -42,36 +42,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
 		if url.host == "oauth-callback" {
-			guard let code = URLComponents(string: url.absoluteString)?.queryItems?.first?.value else {
-				DispatchQueue.main.async {
-					let alert = UIAlertController(title: "Whoops!", message: "There was an issue with your FitBit authentication. Please try again.", preferredStyle: .alert)
-					alert.show(self.window!.rootViewController!, sender: nil)
-				}
-				return false
-			}
-			
-			let base64Secret = Data("\(clientID):\(clientSecret)".utf8).base64EncodedString()
-			var request = URLRequest(url: URL(string: "\(tokenURL)")!)
-			request.httpMethod = "POST"
-			request.httpBody = "client_id=\(clientID)&grant_type=authorization_code&redirect_uri=\(callbackURI)&code=\(code)".data(using: .utf8)
-			request.addValue("Basic \(base64Secret)", forHTTPHeaderField: "Authorization")
-			
-			let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-				if let responseDict = try? JSONSerialization.jsonObject(with: data!, options: []) as! Dictionary<String, Any> {
-					guard !responseDict.keys.contains("errors") else {
-						print("Error: \(responseDict["errors"]!)")
-						return
-					}
-					accessToken = responseDict["access_token"] as! String
-				} else {
-					print("JSON Serialization error")
-				}
-			}
-			
-			task.resume()
+            // Fitbit auth callback uses "#" instead of "?" in query string params so we need to replace it before we can properly parse the querystring params
+            let urlString = url.absoluteString.replacingOccurrences(of: "#", with: "?")
+            guard let url = URL(string: urlString) else {
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Whoops!", message: "There was an issue with your FitBit authentication. Please try again.", preferredStyle: .alert)
+                    alert.show(self.window!.rootViewController!, sender: nil)
+                }
+                return false
+            }
+            
+            fitbitAccessToken = url.queryStringValueOf(queryStringName: "access_token")!
+            fitbitUserId = url.queryStringValueOf(queryStringName: "user_id")!
 		}
 		return true
 	}
-	
 }
 

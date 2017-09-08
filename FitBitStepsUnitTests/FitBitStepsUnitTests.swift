@@ -1,15 +1,14 @@
 //
-//  FitBit_StepsTests.swift
-//  FitBit StepsTests
+//  FitBitStepsUnitTests.swift
+//  FitBitStepsUnitTests
 //
-//  Created by Daniel Hsu on 7/18/17.
+//  Created by Kenny Ma on 8/28/17.
 //  Copyright © 2017 Mango. All rights reserved.
 //
 
 import XCTest
-@testable import FitBit_Steps
 
-class FitBit_StepsTests: XCTestCase {
+class FitBitStepsUnitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

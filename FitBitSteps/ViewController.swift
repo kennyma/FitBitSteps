@@ -24,10 +24,9 @@ class ViewController: UIViewController {
 	}
 
 	@IBAction func connectButtonTapped(_ sender: UIButton) {
-		let requestURL = URL(string: "\(authURL)?client_id=\(clientID)&response_type=code&scope=activity&redirect_uri=\(callbackURI)")!
+		let requestURL = URL(string: "\(authURL)?client_id=\(clientID)&response_type=token&scope=activity&redirect_uri=\(callbackURI)")!
 		
 		UIApplication.shared.open(requestURL, options: [:], completionHandler: { (success) in })
 	}
-
 }
 
