@@ -1,6 +1,6 @@
 //
-//  FitBit_StepsUITests.swift
-//  FitBit StepsUITests
+//  FitBitStepsUITests.swift
+//  FitBitStepsUITests
 //
 //  Created by Daniel Hsu on 7/18/17.
 //  Copyright © 2017 Mango. All rights reserved.
@@ -8,10 +8,10 @@
 
 import XCTest
 
-class FitBit_StepsUITests: XCTestCase {
-	
-	let app = XCUIApplication()
+class FitBitStepsUITests: XCTestCase {
         
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -21,7 +21,7 @@ class FitBit_StepsUITests: XCTestCase {
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
+        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -31,8 +31,9 @@ class FitBit_StepsUITests: XCTestCase {
     }
     
     func testEntryUI() {
-		XCTAssert(app.staticTexts["Hello!"].exists)
-		XCTAssert(app.buttons["Connect My FitBit"].exists)
+        XCTAssert(app.staticTexts["Hello!"].exists)
+        XCTAssert(app.buttons["Connect My FitBit"].exists)
     }
+
     
 }
